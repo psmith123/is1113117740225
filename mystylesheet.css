@@ -1,3 +1,9 @@
 .mainheading{
     text-align: center;
 }
+body {
+    background-color: lightgrey;
+}
+a {
+    color: hotpink;
+}

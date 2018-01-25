@@ -4,6 +4,7 @@
 body {
     background-color: lightgrey;
 }
+h1   {color: blue;}
 a {
-    color: hotpink;
+    color: black;
 }

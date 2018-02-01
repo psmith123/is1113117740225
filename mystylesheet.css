@@ -1,10 +1,12 @@
 .mainheading{
     text-align: center;
 }
+
 body {
-    background-color: lightgrey;
+    background-image: url(https://image.freepik.com/free-vector/dripping-blue-paint-on-a-white-wood-background_1048-6143.jpg),url(https://image.freepik.com/free-photo/abstract-watercolor-paint-background_23-2147747626.jpg)
 }
-h1   {color: blue;}
+
 a {
     color: black;
 }
+

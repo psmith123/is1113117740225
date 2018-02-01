@@ -1,17 +1,15 @@
 #section1 {
-    background-color: rgb(238, 0, 90)
-}
-#section1 {
-    background: lightblue url("https://wallpaperfx.com/uploads/wallpapers/2015/03/18/15955/preview_colorful-beach-chairs-wallpaper.jpg") no-repeat fixed center; 
+    background: url("http://showcase.vhprimary.com/wp-content/uploads/2016/06/Summer-Holidays.jpg") no-repeat fixed center; 
 }
 
 #section2{
-    background-color: rgb(44, 62, 80)
+    background: url("https://i1.wp.com/www.maryloujohn-villas.com/wp-content/uploads/2014/12/oia-greece-santorini-1680x1050-e1419865721364.jpg") no-repeat fixed center;
 }
 #section3{
-    background-color: rgb(51, 153, 204)
+    background: url("https://i.imgur.com/4nOZanJ.jpg") no-repeat fixed center;
 }
+
 .section{
     text-align: center;
-    color: white;
+    color: black;
 }

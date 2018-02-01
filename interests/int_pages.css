@@ -1,6 +1,10 @@
-#section1{
+#section1 {
     background-color: rgb(238, 0, 90)
 }
+#section1 {
+    background: lightblue url("https://wallpaperfx.com/uploads/wallpapers/2015/03/18/15955/preview_colorful-beach-chairs-wallpaper.jpg") no-repeat fixed center; 
+}
+
 #section2{
     background-color: rgb(44, 62, 80)
 }

@@ -16,43 +16,80 @@
             <br/>
             
             <form method="POST" action="Ebus2.php">
-              
+              <!--Salesforce-->
               <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
                 SalesForce @ $100
               </label>
               
               <br/>
-              
-              <label for="aws">
+               <!--Amazon Web Service-->
+              <label for="Amazon Web Service">
                 <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
-                AWS @ $300
+                Amazon Web Service @ $300
+              </label>
+              
+              <br/>
+               <!--Cloud 9-->
+              <label for="Cloud 9">
+                <input type="radio" id="Cloud 9" name="product" onClick="disablebtnProceed()"/>
+               Cloud 9 @ $200
+              </label>
+              
+              <br/>
+               <!--Gmail-->
+              <label for="Gmail">
+                <input type="radio" id="Gmail" name="product" onClick="disablebtnProceed()"/>
+                Gmail @ $400
               </label>
               
               <br/>
               <br/>
-              
+               <!--Subtotal-->
               <label for="subtotal">
                 Sub Total
                 <input type="text" id="subtotal" value="0.00" readonly/>
               </label>
               
               <br/>
-              
-              <label for="total">
-                Total
-                <input type="text" id="total" value="0.00" readonly/>
+              <br/>
+               <!--Discount-->
+              <label for="Discount">
+                Discount @ 5%
+                <br/>
+                (-Discount)
+                <input type="text" id="Discount" value="0.00" readonly/>
               </label>
-    
+              
+              <br/>
               <br/>
               
-              <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+              <!--VAT-->
+              <label for="VAT">
+                VAT @ 10%
+                <input type="text" id="VAT" value="0.00" readonly/>
+              </label>
+              
+              <br/>
+              <br/>
+              
+               <!--Total-->
+              <label for="total">
+                Total
+                <br/>
+                (-Discount + VAT)
+                <input type="text" id="total" value="0.00" readonly/>
+              </label>
+              <br/>
+              <br/>
+              
+              <button type="submit" id="btnProceed"  disabled>Add to Shopping Cart</button>
             
             </form>
             
             <br/>
             <button onClick="calcSub()">Calculate Cost</button>
-            <a role="button" href="Ebus1.php">Clear Choice</a>
+            <a role="button" href="Ebus1.php"  >Clear Choice</a>
             
     
     </body>

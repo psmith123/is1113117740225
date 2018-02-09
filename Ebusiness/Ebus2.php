@@ -14,8 +14,25 @@
         
           <form action="Ebus3.php" method="POST">
             
+            <label for="Name">
+              Name
+              <input type="text"  id="Name" placeholder="Enter Name"/>
+            </label>
+            
+            <br/>
+            <br/>
+            <label for="Email">
+              Email
+              <input type="text"  id="Email" placeholder="Email Address"/>
+            </label>
+            
+            <br/>
+            <br/>
+            
             <label for="user_pin">PIN</label>
             <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+            <br/>
+            <br/>
           
             <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
             

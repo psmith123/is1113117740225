@@ -1,3 +1,7 @@
+<?php
+//Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -53,6 +57,7 @@
               
               <br/>
               <br/>
+              
                <!--Discount-->
               <label for="Discount">
                 Discount @ 5%
@@ -80,17 +85,22 @@
                 (-Discount + VAT)
                 <input type="text" id="total" value="0.00" readonly/>
               </label>
+              
               <br/>
               <br/>
               
               <button type="submit" id="btnProceed"  disabled>Add to Shopping Cart</button>
             
             </form>
-            
             <br/>
             <button onClick="calcSub()">Calculate Cost</button>
-            <a role="button" href="Ebus1.php"  >Clear Choice</a>
+            <a role="button" href="Ebus1.php">Clear Choice</a>
             
+            
+            <?php
+            //Set session as variables
+            $_SESSION["total"] - $_POST["total"];
+            ?>
     
     </body>
 </html>

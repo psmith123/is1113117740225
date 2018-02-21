@@ -21,7 +21,7 @@ session_start();
             <label for="Name">
               Name
                <!--Adding the text box, id, place holder, and validating the name-->
-              <input type="text"  id="user_name"  placeholder="Enter Name" pattern="[A-Za-z]" required>
+              <input type="text"  id="user_name"  placeholder="Enter Name" pattern="[A-Za-z}" maxlength = "25" required>
             </label>
             
             <br/>
@@ -37,7 +37,7 @@ session_start();
             <br/>
             
             <label for="user_pin">PIN</label>
-            <input type="password" id="user_pin" placeholder="Card PIN" pattern="[0-9]{4}" required>
+            <input type="password" id="user_pin" placeholder="Card PIN" pattern="[0-9]{4}" maxlength = "4" required>
             <br/>
             <br/>
           

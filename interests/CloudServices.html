@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About Cloud</title>
+     <head>
+      <meta charset="utf-8">
+        <title>About the Cloud</title>
+        <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+        <link rel="stylesheet" href="int_pages.css" type="text/css" />
+        
+        <!--Adding Bootstrap-->
+        <!--From Bootstrap.com-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+        
+        <!--Page Piling-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
+        
+      <script type="text/javascript">
+      $(document).ready(function() {
+      $('#pagepiling').pagepiling();
+      });
+      </script>
+
     </head>
-    
+  
     <body>
-        <p><strong> Salesforce</strong></p>
-        <br>
-        <p> Salesforce is an American based cloud computing company, which uses Software as a Service (SaaS) to send information across the Internet. Salesforce is becoming a popular enterprise for 
-        providing companies with interfaces for managerial work. A good example of a SaaS is Microsoft Office 365. </p>
-        <br/>
-        <br/>
-        <p><strong>Cloud 9</strong></p>
-        <p> Cloud9 IDE is an online integrated development environment, published as open source from version 3.0. It supports hundreds of programming languages, including C, C++, PHP, Ruby, Perl, Python, JavaScript with Node.js, and Go. It enables developers to get started with coding immediately with pre-configured workspaces, collaborate with their peers with collaborative coding features, and web development features like live preview and browser compatibility testing.</p>
-        <br/>
-        <br/>
-        <p><strong>Amazon Web Service</strong></p>
+      
+      <div id="pagepiling">
+	<div class="section" id="section1" > <strong>Cloud 9</strong> 
+	<p>Cloud9 IDE is an online integrated development environment, published as open source from version 3.0. It supports hundreds of programming languages, including C, C++, PHP, Ruby, Perl, Python, JavaScript with Node.js, and Go. It enables developers to get started with coding immediately with pre-configured workspaces, collaborate with their peers with collaborative coding features, and web development features like live preview and browser compatibility testing.</p>
+	</div>
+	<div class="section" id="section2"> <strong>Salesforce</strong>
+		<p>Salesforce is an American based cloud computing company, which uses Software as a Service (SaaS) to send information across the Internet. Salesforce is becoming a popular enterprise for 
+        providing companies with interfaces for managerial work. A good example of a SaaS is Microsoft Office 365.</p>
+	</div>
+	<div class="section" id="section3"> 
+	<strong>Amazon Web Service</strong>
+<br/>
+
+   <a href="../homepage.html" class="btn btn-success"> Home</a>
+</div>
+</div>
+     
         
     </body>
     

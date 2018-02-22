@@ -1,14 +1,23 @@
 
 
 #section1 {
-    background: url("http://www.healthcarebusinesstech.com/wp-content/uploads/cloud-computing-21.jpg") no-repeat width 100%;
+    background: url("https://www.titanui.com/wp-content/uploads/2013/02/18/Blue-Cloud-PSD-Design.png")
+}
+#section1 { background-size: cover;
+    
+}
+#section2{
+    background: url("https://blog.stoneshot.com/wp-content/uploads/2015/04/shutterstock_240427732_SLIDER2.png")
+}
+#section2 { background-size: cover;
+    
 }
 
-#section2{
-    background: url("http://paranoid-internet.de/") no-repeat width 100%;
-}
 #section3{
-    background: url("https://www.riverbed.com/image/fpo/solutions/solutions_aws_chalk_talk_carousel_bg.jpg") no-repeat width 100%;
+    background: url("https://www.riverbed.com/image/fpo/solutions/solutions_aws_chalk_talk_carousel_bg.jpg") 
+}
+#section3 { background-size: cover;
+    
 }
 
 .section{

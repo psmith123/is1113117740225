@@ -11,17 +11,32 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <style>
+          
+          body{ background-image: url(https://media.istockphoto.com/photos/manila-file-folder-on-white-background-picture-id147073576?k=6&m=147073576&s=612x612&w=0&h=7h8vJ9Wyd6mkfHda7yIGNcRN9CoVIBOgslzhySTk2UQ=);
+          }
+          body{ background-size: cover;
+          }
+          body{ text-align:center;
+          }
+        </style>
     </head>
   
     <body>
+      <br/>
       <h4>Please enter your payment details</h4>
         
           <form action="Ebus3.php" method="POST">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             
             <label for="Name">
               Name
                <!--Adding the text box, id, place holder, and validating the name-->
-              <input type="text"  id="user_name"  placeholder="Enter Name" pattern="[A-Za-z}" maxlength = "25" required>
+              <input type="text"  id="user_name" name="user_name" placeholder="Enter Name" pattern="[A-Za-z}" maxlength = "25" required>
             </label>
             
             <br/>
@@ -54,6 +69,7 @@ session_start();
             <?php
             //Set session as variables
             $_SESSION["total"] = $_POST["total"];
+            $_SESSION["user_name"] = $_POST["user_name"];
             ?>
 
     </body>

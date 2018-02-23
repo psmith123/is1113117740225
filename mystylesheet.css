@@ -3,9 +3,11 @@
 }
 
 body {
-    background-image: url(https://c.wallhere.com/photos/eb/12/simple_background-158060.png!d)
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2zUI80ElJ5nTzE0IbMDglcL0n5vpThuVttMn6kBjRZrK5jRA)
 }
-
+body{
+    background-size: cover;
+}
 a {
     color: black;
 }

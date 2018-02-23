@@ -44,7 +44,7 @@ session_start();
             <label for="Email">
               Email 
               <!--Adding the text box, id, place holder, and validating the email address-->
-              <input type="text"  id="user_email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required> 
+              <input type="text"  id="user_email" name="user_email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required> 
               
             </label>
             
@@ -69,7 +69,7 @@ session_start();
             <?php
             //Set session as variables
             $_SESSION["total"] = $_POST["total"];
-            $_SESSION["user_name"] = $_POST["user_name"];
+          
             ?>
 
     </body>

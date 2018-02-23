@@ -113,10 +113,6 @@ session_start();
             <a role="button" href="Ebus1.php">Clear Choice</a>
             <a href="../homepage.html" class="button">Home</a>
             
-            <?php
-            //Set session as variables
-            $_SESSION["total"] = $_POST["total"];
-             $_SESSION["user_name"] = $_POST["user_name"];
-            ?>
+            
     </body>
 </html>

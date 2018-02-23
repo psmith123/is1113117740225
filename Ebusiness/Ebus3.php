@@ -21,10 +21,16 @@ session_start();
         <h4>PAYMENT RECEIPT</h4>
         
         
+        <?php
+        $_SESSION["user_name"] = $_POST["user_name"];
+        $_SESSION["user_email"] = $_POST["user_email"];
+        ?>
+        
          <?php
             //Echo session variables that were set on previous page
-            echo "Name" . $_SESSION["user_name"] . ".";
-            echo "Total is " . $_SESSION["total"] . ".";
+            echo "Name" . $_SESSION["user_name"] . "<br/>";
+            echo "Total is " . $_SESSION["total"] . "<br/>";
+            echo "Email" .    $_SESSION["user_email"]. "<br/>";
             ?>
             
     </body>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Education</title>
-        <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
+       <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
         
         <!--Adding Bootstrap-->
         <!--From Bootstrap.com-->
@@ -12,53 +12,56 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
    
      <style type="text/css">
-            .topnav {
-            overflow: hidden;
-            background-color: #b4b4b4;
-            }
-                
-            .topnav a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            }
-                
-            .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-            }
-                
-            .topnav .active {
-            background-color:#70708F;
-            color: white;
-            }
             
             body { background-image: url(https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
             } 
             body { background-size:cover;
             }
-            body { text-align:center; 
+            
+            body {
+                text-align: center
+            }
+            footer {
+            overflow: hidden;
+            background-color: #b4b4b4;
             }
       </style> 
     
     
         
     </head>
+    
     <body>
-    <div class="topnav">
-        <a href="../homepage.html">Home</a>
+        
+      <ul>
+  <li><a href="../homepage.html">Home</a></li>
+  
+  <li class="dropdowns">
+    <a class="dropbtns">Curriculum Vitae</a>
+    <div class="dropdown-contents">
       <a href="cv_page1.html">Personal</a>
-      <a class="active" href="cv_page2.html">Education</a>
+      <a href="cv_page2.html">Education</a>
       <a href="cv_page3.html">Work</a>
     </div>
-    </head>
-    <body>
-        <h1 style="border:2px solid black;" class="mainheading">Educational Details</h1>
+  </li>
+  
+    <li class="dropdowns">
+    <a class="dropbtns">Interests</a>
+    <div class="dropdown-contents">
+     <a href="interests/sports.html">Sports</a>
+      <a href="interests/travel.html">Travel</a>
+      <a href="interests/CloudServices.html">Cloud Services</a>
+    </div>
+  </li>
+  
+  <li><a href="Ebusiness/Ebus1.php">Products</a></li>
+</ul>
+    
+
+        <h1 class="mainheading">Educational Details</h1>
         <br/>
-        <p>Currently Studying in University College Cork</p>
+        <p><strong>Currently Studying in University College Cork</strong></p>
+        <br/>
         <p><strong>College:</strong> UCC</p>
         <p><strong>Course:</strong> Business Infomation Systems</p>
         <p><strong>Year:</strong> 2017-2021</p>
@@ -66,16 +69,18 @@
         <img src="https://www.ucc.ie/en/media/academic/schoolofenglish/UCC_Logo_RGB_simplified.jpg" alt="UCC" style="width:400px;height:200px;">
         <br/>
         <br/>
-        <p> Previous Education Details</p>
+        <p><strong>Previous Education Details</strong></p>
+        <br/>
         <p><strong>Secondary School:</strong> Innishannon</p>
         <p><strong>Year:</strong> 2017</p>
         
         <p><strong>Qualifications:</strong> ECDL, Typing </p>
+        <br/>
+       
         
-      
-
+        <a href="cv_page3.html" class="btn btn-dark">Next</a>
         
-        
-        <a href="cv_page3.html" class="button">Next</a>
+        <br/>
     </body>
+           <footer> Company name</footer>
 </html>

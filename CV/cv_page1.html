@@ -2,7 +2,10 @@
 <html>
     <head>
         <title>Personal</title>
-        <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
+        <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+        
+        <!--Link for the icon beside the address, phone, and email-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!--Adding Bootstrap-->
         <!--From Bootstrap.com-->
@@ -11,63 +14,69 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+      <!--Styling the page-->
       <style type="text/css">
-            .topnav {
-            overflow: hidden;
-            background-color: #b4b4b4;
-            }
-                
-            .topnav a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            }
-                
-            .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-            }
-                
-            .topnav .active {
-            background-color: #70708F;
-            color: white;
-            }
             
-            body { background-image: url(https://c.wallhere.com/photos/eb/12/simple_background-158060.png!d)
+            body { background-image: url(https://i.ytimg.com/vi/hPCotoawhk0/maxresdefault.jpg)
+            } 
+            body {  background-size:cover;
             }
-            body { text-align:center; 
+            body{
+                text-align: center
             }
+           
       </style>  
-    
-    
-        
+
     </head>
+    
+    
     <body>
-    <div class="topnav">
-        <a href="../homepage.html">Home</a>
-      <a class="active" href="cv_page1.html">Personal</a>
+        <!--Adding the navigation bar at the top of the page-->
+       
+      <ul>
+  <li><a href="../homepage.html">Home</a></li>
+  
+  <li class="dropdowns">
+    <a class="dropbtns">Curriculum Vitae</a>
+    <div class="dropdown-contents">
+      <a href="cv_page1.html">Personal</a>
       <a href="cv_page2.html">Education</a>
       <a href="cv_page3.html">Work</a>
     </div>
-    
-        <!--Adding a border around the mainheading-->
-        <h1 style="border:2px solid black;" class="mainheading">Personal Details</h1>
+  </li>
+  
+    <li class="dropdowns">
+    <a class="dropbtns">Interests</a>
+    <div class="dropdown-contents">
+      <a href="interests/sports.html">Sports</a>
+      <a href="interests/travel.html">Travel</a>
+      <a href="interests/CloudServices.html">Cloud Services</a>
+    </div>
+  </li>
+  <li><a href="Ebusiness/Ebus1.php">Products</a></li>
+</ul>
+  
+   
+        <!--Adding the mainheading-->
+        <h1 class="mainheading">Personal Details</h1>
         <br/>
         <br/>
         <p>Personal details and how  you can contact me.</p>
         <br/>
         <br/>
         <!--Adding an image-->
-        <img src="https://www.buira.org/assets/images/shared/default-profile.png" alt="Profile" style="width:100px;height:100px" align="right;"> 
+        <img src="https://ww5.cityofpasadena.net/police/wp-content/uploads/sites/57/2017/07/blank-user-female.jpg" alt="profile"></img>
+       
         <br/>
-        <p><strong>Name:</strong> Priscilla Smith</p>
-        <p><strong>Address:</strong> ************* </p>
+        <!--Adding the name with an icon in front-->
+        <p><i class="fa fa-user-circle-o" style="font-size:24px"></i> <strong>Name:</strong> Priscilla Smith</p>
+        <!--Adding the address with an icon in front-->
+       <p><i class="fa fa-address-book" style="font-size:24px"></i> <strong>Address:</strong> ************* </p>
         <p><strong>City:</strong> Cork</p>
-        <p><strong>Phone:</strong> **********</p>
-        <p><strong>Email:</strong> **********</p>
+        
+        <p><i class="fa fa-phone" style="font-size:24px"></i> <strong>Phone:</strong> **********</p>
+        
+        <p><i class="fa fa-envelope" style="font-size:24px"></i> <strong>Email:</strong> **********</p>
   
         
         <a href="cv_page2.html" class="btn btn-dark">Next</a>

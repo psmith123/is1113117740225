@@ -33,11 +33,10 @@ function calcDisVatTotal(parmSubTotal){
     discountAmt = (subTotal * 0.05); //Calculate the discount
     vatAmt = ((subTotal - discountAmt) * 0.1); //Calculate the vat
     totalPrice = (subTotal - discountAmt + vatAmt ); //Calculate the total
-    
     display(subTotal, discountAmt, vatAmt, totalPrice); //Pass the value to complete the function display() next
 }
 
-//Function to display subTotal, discountAmt, vatAmt, totalPrice
+//Function to display the prices in the textboxes on the Ebus page
 function display(parm1, parm2, parm3, parm4)
 {
     

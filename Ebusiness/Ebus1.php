@@ -7,12 +7,17 @@ session_start();
 <html>
     
     <head>
+        <!--Adding JQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
+        
         <!-- Title of the form -->
         <title>Select Product</title>
+        <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
         
-        <style>
+
+         <style type="text/css">
+          
         body{ background-image: url(http://www.diarioonline.com.br/app/painel/modulo-noticia/img/imagensdb/original/destaque-464105-t5.jpg)
         }
         body{ background-size:cover;
@@ -29,6 +34,30 @@ session_start();
     
     
     <body>
+        
+       <ul>
+  <li><a href="../homepage.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Curriculum Vitae</a>
+    <div class="dropdown-content">
+      <a href="cv_page1.html">Personal</a>
+      <a href="cv_page2.html">Education</a>
+      <a href="cv_page3.html">Work</a>
+    </div>
+  </li>
+  
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Interests</a>
+    <div class="dropdown-content">
+      <a href="interests/sports.html">Sports</a>
+      <a href="interests/travel.html">Travel</a>
+      <a href="interests/CloudServices.html">Cloud Services</a>
+    </div>
+  </li>
+  <li><a href="Ebus1.php">Products</a></li>
+</ul>
+    
         <!-- Addong a heading -->
         <h4><strong>Select a Product</strong></h4>
         <br/>

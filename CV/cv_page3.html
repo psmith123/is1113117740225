@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Work</title>
-        <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
+        <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
         
         <!--Adding Bootstrap-->
         <!--From Bootstrap.com-->
@@ -12,50 +12,47 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
       <style type="text/css">
-            .topnav {
-            overflow: hidden;
-            background-color: #b4b4b4;
-            }
-                
-            .topnav a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            }
-                
-            .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-            }
-                
-            .topnav .active {
-            background-color:#70708F;
-            color: white;
-            }
-            body { background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/02/66/10/125789bd2f84412.jpg)
-            } 
-            body { background-size: cover;
-            }
-             body { text-align:center; 
-            }
             
+        body { background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/02/66/10/125789bd2f84412.jpg)
+        } 
+        body { background-size: cover;
+        }
+        body { text-align: center;
+        }
       </style> 
     
         
     </head>
+    
     <body>
-    <div class="topnav">
-        <a href="../homepage.html">Home</a>
+        
+   <ul>
+       
+  <li><a href="../homepage.html">Home</a></li>
+  
+  <li class="dropdowns">
+    <a  class="dropbtns">Curriculum Vitae</a>
+    <div class="dropdown-contents">
       <a href="cv_page1.html">Personal</a>
       <a href="cv_page2.html">Education</a>
-      <a class="active" href="cv_page3.html">Work</a>
+      <a href="cv_page3.html">Work</a>
     </div>
-    </head>
-    <body>
-        <h1 style="border:2px solid black;" class="mainheading">Work Experience</h1>
+  </li>
+  
+    <li class="dropdowns">
+    <a  class="dropbtns">Interests</a>
+    <div class="dropdown-contents">
+      <a href="interests/sports.html">Sports</a>
+      <a href="interests/travel.html">Travel</a>
+      <a href="interests/CloudServices.html">Cloud Services</a>
+    </div>
+  </li>
+  
+  <li><a href="Ebusiness/Ebus1.php">Products</a></li>
+</ul>
+
+
+        <h1 class="mainheading">Work Experience</h1>
         <br/>
         <p> All about my previous work experience.</p>
         <br/>

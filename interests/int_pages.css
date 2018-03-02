@@ -1,5 +1,3 @@
-
-
 #section1 {
     background: url("https://hdqwalls.com/download/spotify-logo-4k-image-2560x1440.jpg")
 }
@@ -11,6 +9,10 @@
 }
 #section2 { background-size: cover;
     
+}
+
+.mainheading{
+    text-align: center;
 }
 
 .section{

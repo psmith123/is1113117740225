@@ -1,14 +1,111 @@
+/*Creating the border style of the unordred list*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+} 
+/*Creating the styles of the list items*/
+li {
+    float: left;
+}
+
+li a, .dropbtns {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdowns:hover .dropbtns {
+    background-color: #70708F;
+}
+
+li.dropdowns {
+    display: inline-block;
+}
+/*Creating the styles for the drop down content in the navigation bar*/
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #70708F;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-contents a:hover {background-color: #f1f1f1}
+
+.dropdowns:hover .dropdown-contents {
+    display: block;
+}   
+
+
+/*Creating the border for the logos in the navigation bar*/    
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+ .fa-github {
+background: #333;
+  color: purple;
+  }
+  
+  
+/*Adding the meanheading*/  
 .mainheading{
     text-align: center;
 }
 
-body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2zUI80ElJ5nTzE0IbMDglcL0n5vpThuVttMn6kBjRZrK5jRA)
-}
-body{
-    background-size: cover;
-}
-a {
-    color: black;
+
+/*Adding the container for the text on the homepage*/
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
 }
 
+
+/*Adding image in the container on the homepage*/
+.container img {
+  float: left;
+  margin-right: 40px;
+  border-radius: 70%;
+}
+
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+}
+
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+ 

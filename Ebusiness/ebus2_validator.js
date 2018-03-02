@@ -9,7 +9,7 @@ function validateDetails(){
     email = document.getElementById("user_email").value;
     
    
-     if (name == ""){
+    if (name == ""){
         alert("Please enter your Name");
     }
     else if (email == ""){

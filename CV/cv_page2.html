@@ -13,6 +13,57 @@
    
      <style type="text/css">
             
+            ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+} 
+/*Creating the styles of the list items*/
+li {
+    float: left;
+}
+
+li a, .dropbtns {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdowns:hover .dropbtns {
+    background-color: #70708F;
+}
+
+li.dropdowns {
+    display: inline-block;
+}
+/*Creating the styles for the drop down content in the navigation bar*/
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #70708F;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-contents a:hover {background-color: #f1f1f1}
+
+.dropdowns:hover .dropdown-contents {
+    display: block;
+}   
+            
             body { background-image: url(https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
             } 
             body { background-size:cover;
@@ -35,26 +86,27 @@
         
       <ul>
   <li><a href="../homepage.html">Home</a></li>
-  
+ <li><a href="../AboutCloud.html">About Cloud</a></li>
   <li class="dropdowns">
-    <a class="dropbtns">Curriculum Vitae</a>
+    <a  class="dropbtns">Curriculum Vitae</a>
     <div class="dropdown-contents">
-      <a href="cv_page1.html">Personal</a>
-      <a href="cv_page2.html">Education</a>
-      <a href="cv_page3.html">Work</a>
+      <a href="CV/cv_page1.html">Personal</a>
+      <a href="CV/cv_page2.html">Education</a>
+      <a href="CV/cv_page3.html">Work</a>
     </div>
   </li>
   
     <li class="dropdowns">
-    <a class="dropbtns">Interests</a>
+    <a  class="dropbtns">Interests</a>
     <div class="dropdown-contents">
-     <a href="interests/sports.html">Sports</a>
+      <a href="interests/sports.html">Sports</a>
       <a href="interests/travel.html">Travel</a>
       <a href="interests/CloudServices.html">Cloud Services</a>
     </div>
   </li>
   
   <li><a href="Ebusiness/Ebus1.php">Products</a></li>
+  <li><a href="https://github.com/psmith123/is1113117740225" class="fa fa-github"></a></li> 
 </ul>
     
 

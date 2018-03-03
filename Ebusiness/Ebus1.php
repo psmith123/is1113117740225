@@ -35,21 +35,21 @@ session_start();
     
     <body>
         
-       <ul>
+    <ul>
   <li><a href="../homepage.html">Home</a></li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Curriculum Vitae</a>
-    <div class="dropdown-content">
+  <li><a href="../AboutCloud.html">About Cloud</a></li>
+  <li class="dropdowns">
+    <a class="dropbtns">Curriculum Vitae</a>
+    <div class="dropdown-contents">
       <a href="cv_page1.html">Personal</a>
       <a href="cv_page2.html">Education</a>
       <a href="cv_page3.html">Work</a>
     </div>
   </li>
   
-    <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Interests</a>
-    <div class="dropdown-content">
+    <li class="dropdowns">
+    <a class="dropbtns">Interests</a>
+    <div class="dropdown-contents">
       <a href="interests/sports.html">Sports</a>
       <a href="interests/travel.html">Travel</a>
       <a href="interests/CloudServices.html">Cloud Services</a>

@@ -6,30 +6,8 @@ session_start();
 <html>
     
      <style type="text/css">
-            .topnav {
-            overflow: hidden;
-            background-color: #b4b4b4;
-            }
-                
-            .topnav a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            }
-                
-            .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-            }
-                
-            .topnav .active {
-            background-color: #70708F;
-            color: white;
-            }
-        body { background-image: url(https://cdn-rainbowresource.netdna-ssl.com/products/052387i1.jpg) 
+         
+        body { background-image: url(http://www.powerpointhintergrund.com/uploads/light-gray-background-images-hd-2.jpeg) 
             }
         body { background-size: cover;
             }
@@ -40,31 +18,56 @@ session_start();
     
     <head>
         <title> RECEIPT </title>
+        
+        <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
     </head>
     <body>
         
-        <div class="topnav">
-        <a href="../homepage.html">Home</a>
-      <a class="active" href="cv_page1.html">Personal</a>
+        <ul>
+  <li><a href="../homepage.html">Home</a></li>
+  <li><a href="../AboutCloud.html">About Cloud</a></li>
+  <li class="dropdowns">
+    <a class="dropbtns">Curriculum Vitae</a>
+    <div class="dropdown-contents">
+      <a href="cv_page1.html">Personal</a>
       <a href="cv_page2.html">Education</a>
       <a href="cv_page3.html">Work</a>
     </div>
-    
-        <h4>PAYMENT RECEIPT</h4>
-        
+  </li>
+  
+    <li class="dropdowns">
+    <a class="dropbtns">Interests</a>
+    <div class="dropdown-contents">
+      <a href="interests/sports.html">Sports</a>
+      <a href="interests/travel.html">Travel</a>
+      <a href="interests/CloudServices.html">Cloud Services</a>
+    </div>
+  </li>
+  <li><a href="Ebus1.php">Products</a></li>
+</ul>
+
+        <br/>
+        <br/>
+        <h2>PAYMENT RECEIPT</h2>
+        <br/>
+        <br/>
         
         <?php
         $_SESSION["user_name"] = $_POST["user_name"];
+        
         $_SESSION["user_email"] = $_POST["user_email"];
         ?>
         
          <?php
             //Echo session variables that were set on previous page
-            echo "Name" . $_SESSION["user_name"] . "<br/>";
-            echo "Total is " . $_SESSION["total"] . "<br/>";
-            echo "Email" . $_SESSION["user_email"]. "<br/>";
+            echo "Name: " . $_SESSION["user_name"] . "<br/>" ."<br/>";
+    
+            echo "Total: " . $_SESSION["total"] . "<br/>"."<br/>";
+        
+            echo "Email: " . $_SESSION["user_email"]. "<br/>" ."<br/>";
             ?>
             
+        <a href="../homepage.html"><button class="button">Finish</button></a>
     </body>
     
    

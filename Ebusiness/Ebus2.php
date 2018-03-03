@@ -8,7 +8,7 @@ session_start();
 <html>
     <head>
         <title>Enter Details</title>
-        
+          <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
          <!--Link for the icon beside the address, phone, and email-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          <!--Link for the icon beside the address, phone, and email-->
@@ -19,8 +19,8 @@ session_start();
         
         <style type="text/css">
            
-           input[type=text], select {
-    width: 100%;
+    input[type=text], select {
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -28,9 +28,17 @@ session_start();
     border-radius: 4px;
     box-sizing: border-box;
 }
-
+input[type=password], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
           
-          body{ background-image: url(https://media.istockphoto.com/photos/manila-file-folder-on-white-background-picture-id147073576?k=6&m=147073576&s=612x612&w=0&h=7h8vJ9Wyd6mkfHda7yIGNcRN9CoVIBOgslzhySTk2UQ=);
+          body{ background-image: url(http://www.powerpointhintergrund.com/uploads/light-gray-background-images-hd-2.jpeg);
           }
           body{ background-size: cover;
           }
@@ -40,11 +48,30 @@ session_start();
     </head>
   
     <body>
+     <ul>
+  <li><a href="../homepage.html">Home</a></li>
+  <li><a href="../AboutCloud.html">About Cloud</a></li>
+  <li class="dropdowns">
+    <a class="dropbtns">Curriculum Vitae</a>
+    <div class="dropdown-contents">
+      <a href="cv_page1.html">Personal</a>
+      <a href="cv_page2.html">Education</a>
+      <a href="cv_page3.html">Work</a>
+    </div>
+  </li>
+  
+    <li class="dropdowns">
+    <a class="dropbtns">Interests</a>
+    <div class="dropdown-contents">
+      <a href="interests/sports.html">Sports</a>
+      <a href="interests/travel.html">Travel</a>
+      <a href="interests/CloudServices.html">Cloud Services</a>
+    </div>
+  </li>
+  <li><a href="Ebus1.php">Products</a></li>
+</ul>
       
       
-    
-      <br/>
-      <div>
       <h1 class="mainheading" >Please enter your payment details</h1>
         
           <form action="Ebus3.php" method="POST">
@@ -52,7 +79,7 @@ session_start();
             <br/>
             <br/>
             <br/>
-            
+         
             <label for="Name"><i class="fa fa-user-circle-o" style="font-size:24px"></i></label> 
               Name
                <!--Adding the text box, id, place holder, and validating the name-->
@@ -76,15 +103,15 @@ session_start();
             <input type="password" id="user_pin" placeholder="Card PIN" pattern="[0-9]{4}" maxlength = "4" required>
             <br/>
             <br/>
-          </div>
+          
             <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
             
           </form>
             
             <br/>
+            <br/>
             <button onClick="validateDetails()">Validate</button>
-            
-            
+        
            <script type="text/javascript" src="ebus2_validator.js"></script>
             
             

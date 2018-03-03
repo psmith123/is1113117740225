@@ -99,13 +99,17 @@ background: #333;
 }
 
 
-
-/* Footer */
-.footer {
-    padding: 20px;
+button {
+    background-color: #70708F; 
+    border:1px solid black;
+    color: white;
+    padding: 8px 19px;
     text-align: center;
-    background: #ddd;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
 }
 
+button {border-radius: 5px;}
 
  

@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>Education</title>
-       <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+       <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         
         <!--Adding Bootstrap-->
         <!--From Bootstrap.com-->
@@ -11,71 +13,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
    
-     <style type="text/css">
+     <style>
             
-            ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-} 
-/*Creating the styles of the list items*/
-li {
-    float: left;
-}
-
-li a, .dropbtns {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropdowns:hover .dropbtns {
-    background-color: #70708F;
-}
-
-li.dropdowns {
-    display: inline-block;
-}
-/*Creating the styles for the drop down content in the navigation bar*/
-.dropdown-contents {
-    display: none;
-    position: absolute;
-    background-color: #70708F;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-contents a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-contents a:hover {background-color: #f1f1f1}
-
-.dropdowns:hover .dropdown-contents {
-    display: block;
-}   
             
-            body { background-image: url(https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
-            } 
-            body { background-size:cover;
+            body { background-image: url(https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+                   background-size:cover;
+                   text-align: center;
             }
-            
-            body {
-                text-align: center
-            }
-            footer {
-            overflow: hidden;
-            background-color: #b4b4b4;
-            }
+
       </style> 
     
     
@@ -84,30 +29,32 @@ li.dropdowns {
     
     <body>
         
-      <ul>
+   <ul>
   <li><a href="../homepage.html">Home</a></li>
  <li><a href="../AboutCloud.html">About Cloud</a></li>
   <li class="dropdowns">
     <a  class="dropbtns">Curriculum Vitae</a>
     <div class="dropdown-contents">
-      <a href="CV/cv_page1.html">Personal</a>
-      <a href="CV/cv_page2.html">Education</a>
-      <a href="CV/cv_page3.html">Work</a>
+      <a href="cv_page1.html">Personal</a>
+      <a href="cv_page2.html">Education</a>
+      <a href="cv_page3.html">Work</a>
     </div>
   </li>
   
     <li class="dropdowns">
     <a  class="dropbtns">Interests</a>
     <div class="dropdown-contents">
-      <a href="interests/sports.html">Sports</a>
-      <a href="interests/travel.html">Travel</a>
-      <a href="interests/CloudServices.html">Cloud Services</a>
+      <a href="../interests/sports.html">Sports</a>
+      <a href="../interests/travel.html">Travel</a>
+      <a href="../interests/CloudServices.html">Cloud Services</a>
     </div>
   </li>
   
   <li><a href="Ebusiness/Ebus1.php">Products</a></li>
   <li><a href="https://github.com/psmith123/is1113117740225" class="fa fa-github"></a></li> 
+  <li><a href="https://is1113117740225.herokuapp.com/"><img src="https://png.icons8.com/color/1600/heroku.png" style="width: 20px;"></a></li> 
 </ul>
+  
     
 
         <h1 class="mainheading">Educational Details</h1>
@@ -134,5 +81,4 @@ li.dropdowns {
         
         <br/>
     </body>
-           <footer> Company name</footer>
 </html>

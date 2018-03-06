@@ -17,7 +17,7 @@ session_start();
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
-        <style type="text/css">
+        <style>
            
     input[type=text], select {
     width: 50%;
@@ -28,6 +28,7 @@ session_start();
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 input[type=password], select {
     width: 50%;
     padding: 12px 20px;
@@ -39,10 +40,8 @@ input[type=password], select {
 }
           
           body{ background-image: url(http://www.powerpointhintergrund.com/uploads/light-gray-background-images-hd-2.jpeg);
-          }
-          body{ background-size: cover;
-          }
-          body{ text-align:center;
+                background-size: cover;
+                text-align:center;
           }
         </style>
     </head>
@@ -69,6 +68,8 @@ input[type=password], select {
     </div>
   </li>
   <li><a href="Ebus1.php">Products</a></li>
+  <li><a href="https://github.com/psmith123/is1113117740225" class="fa fa-github"></a></li> 
+  <li><a href="https://is1113117740225.herokuapp.com/"><img src="https://png.icons8.com/color/1600/heroku.png" style="width: 20px;"></a></li>
 </ul>
       
       
@@ -118,7 +119,10 @@ input[type=password], select {
             <?php
             //Set session as variables
             $_SESSION["total"] = $_POST["total"];
-          
+        
+            $_SESSION["discount"] = $_POST["discount"];
+         
+            $_SESSION["vat"] = $_POST["vat"];
             ?>
 
     </body>

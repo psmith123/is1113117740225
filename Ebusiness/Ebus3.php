@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     
-     <style type="text/css">
+     <style>
          
         body { background-image: url(http://www.powerpointhintergrund.com/uploads/light-gray-background-images-hd-2.jpeg) 
             }
@@ -20,6 +20,8 @@ session_start();
         <title> RECEIPT </title>
         
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         
@@ -44,6 +46,8 @@ session_start();
     </div>
   </li>
   <li><a href="Ebus1.php">Products</a></li>
+  <li><a href="https://github.com/psmith123/is1113117740225" class="fa fa-github"></a></li> 
+  <li><a href="https://is1113117740225.herokuapp.com/"><img src="https://png.icons8.com/color/1600/heroku.png" style="width: 20px;"></a></li>
 </ul>
 
         <br/>
@@ -56,15 +60,20 @@ session_start();
         $_SESSION["user_name"] = $_POST["user_name"];
         
         $_SESSION["user_email"] = $_POST["user_email"];
+        
         ?>
         
          <?php
             //Echo session variables that were set on previous page
             echo "Name: " . $_SESSION["user_name"] . "<br/>" ."<br/>";
-    
-            echo "Total: " . $_SESSION["total"] . "<br/>"."<br/>";
         
             echo "Email: " . $_SESSION["user_email"]. "<br/>" ."<br/>";
+            
+            echo "Discount: " .  $_SESSION["discount"] ."<br/>"."<br/>";
+            
+            echo "VAT: " .  $_SESSION["vat"] ."<br/>"."<br/>";
+             
+            echo "Total: " . $_SESSION["total"] . "<br/>"."<br/>";
             ?>
             
         <a href="../homepage.html"><button class="button">Finish</button></a>

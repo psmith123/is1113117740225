@@ -14,17 +14,14 @@ session_start();
         <!-- Title of the form -->
         <title>Select Product</title>
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-         <style type="text/css">
+         <style>
           
-        body{ background-image: url(http://www.diarioonline.com.br/app/painel/modulo-noticia/img/imagensdb/original/destaque-464105-t5.jpg)
-        }
-        body{ background-size:cover;
-        }
-        
-        body{
-         text-align: center
+        body{ background-image: url(http://www.diarioonline.com.br/app/painel/modulo-noticia/img/imagensdb/original/destaque-464105-t5.jpg);
+              background-size: cover;
+              text-align: center;
         }
           
         </style>
@@ -56,6 +53,8 @@ session_start();
     </div>
   </li>
   <li><a href="Ebus1.php">Products</a></li>
+  <li><a href="https://github.com/psmith123/is1113117740225" class="fa fa-github"></a></li> 
+  <li><a href="https://is1113117740225.herokuapp.com/"><img src="https://png.icons8.com/color/1600/heroku.png" style="width: 20px;"></a></li>
 </ul>
     
         <!-- Addong a heading -->
@@ -109,7 +108,7 @@ session_start();
             <!-- Adding a textbox for the Discount  -->
             <label for="discount">
                 Discount @ 5%
-                <input type="text" id="discount" value="0.00" readonly/>
+                <input type="text" id="discount" name="discount"value="0.00" readonly/>
             </label>
             <br/>
             <br/>
@@ -117,7 +116,7 @@ session_start();
             <!-- Adding a textbox for the VAT  -->
             <label for="vat">
                 VAT @ 10%
-                <input type="text" id="vat" value="0.00" readonly/>
+                <input type="text" id="vat" name="vat"value="0.00" readonly/>
             </label>
             <br/>
             <br/>
@@ -131,7 +130,7 @@ session_start();
             <br/>
         
             <!-- Adding the button to proceed -->
-            <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+            <button type="submit" id="btnProceed" hidden>Add to Shopping Cart</button>
             <br/>
             <br/>
             

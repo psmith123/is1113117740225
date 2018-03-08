@@ -14,9 +14,12 @@ session_start();
         <!-- Title of the form -->
         <title>Select Product</title>
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        
+        <!--Styling the page-->
+        <!--Image from Google-->
          <style>
           
         body{ background-image: url(http://www.diarioonline.com.br/app/painel/modulo-noticia/img/imagensdb/original/destaque-464105-t5.jpg);
@@ -31,7 +34,7 @@ session_start();
     
     
     <body>
-        
+        <!--Adding the navigation bar-->
     <ul>
   <li><a href="../homepage.html">Home</a></li>
   <li><a href="../AboutCloud.html">About Cloud</a></li>
@@ -54,7 +57,7 @@ session_start();
   </li>
   <li><a href="Ebus1.php">Products</a></li>
   <li><a href="https://github.com/psmith123/is1113117740225" class="fa fa-github"></a></li> 
-  <li><a href="https://is1113117740225.herokuapp.com/"><img src="https://png.icons8.com/color/1600/heroku.png" style="width: 20px;"></a></li>
+  <li><a href="https://is1113117740225.herokuapp.com/"><img src="https://png.icons8.com/color/1600/heroku.png" style="width: 20px;" alt="Logo"></a></li>
 </ul>
     
         <!-- Addong a heading -->
@@ -82,7 +85,7 @@ session_start();
             <br/>
             
             <!-- Adding a radio button for Cloud 9 -->
-            <label for="Cloud 9">
+            <label for="cloud9">
                 <input type="radio" id="cloud9" name="product" onClick="disablebtnProceed()"/>
                 Cloud 9 @ $200
             </label>
@@ -108,7 +111,7 @@ session_start();
             <!-- Adding a textbox for the Discount  -->
             <label for="discount">
                 Discount @ 5%
-                <input type="text" id="discount" name="discount"value="0.00" readonly/>
+                <input type="text" id="discount" name="discount" value="0.00" readonly/>
             </label>
             <br/>
             <br/>
@@ -116,7 +119,7 @@ session_start();
             <!-- Adding a textbox for the VAT  -->
             <label for="vat">
                 VAT @ 10%
-                <input type="text" id="vat" name="vat"value="0.00" readonly/>
+                <input type="text" id="vat" name="vat" value="0.00" readonly/>
             </label>
             <br/>
             <br/>
@@ -139,7 +142,8 @@ session_start();
              <!--Calls the calcSub function -->
             <button onClick="calcSub()">Calculate Cost</button>
             <a role="button" href="Ebus1.php">Clear Choice</a>
-            <a href="../homepage.html" class="button">Home</a>
+            
+           
             
             
     </body>

@@ -48,7 +48,7 @@ session_start();
         </style>
     </head>
   
-    <body>
+    <body onload="foo()">
       <!--Adding the navigation bar-->
      <ul>
   <li><a href="../homepage.html">Home</a></li>
@@ -106,14 +106,14 @@ session_start();
             <br/>
             <br/>
             <!--Adding a button-->
-            <button type="submit" id="btnPurchase" hidden>Proceed with Purchase</button>
+            <button type="submit" id="btnPurchase" class="button" disabled>Proceed with Purchase</button>
             
           </form>
             
             <br/>
             <br/>
             <!--Adding a button-->
-            <button onClick="validateDetails()">Validate</button>
+            <button class="button" onClick="validateDetails()">Validate</button>
         
            <script type="text/javascript" src="ebus2_validator.js"></script>
             
@@ -128,4 +128,5 @@ session_start();
             ?>
 
     </body>
+  
 </html>

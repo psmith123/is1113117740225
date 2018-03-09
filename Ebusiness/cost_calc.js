@@ -50,10 +50,10 @@ function display(parm1, parm2, parm3, parm4)
 
 //Function that enables the proceed button
 function enablebtnProceed(){
-    $("#btnProceed").prop("hidden", false);
+    $("#btnProceed").prop("disabled", false);
 }
 
 //Function that disable the proceed button
 function disablebtnProceed(){
-    $("#btnProceed").prop("hidden", true);
+    $("#btnProceed").prop("disabled", true);
 }

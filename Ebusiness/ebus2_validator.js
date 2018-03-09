@@ -24,10 +24,13 @@ function validateDetails(){
      else{
         enablebtnPurchase();
     }
+    
+
+    
     function enablebtnPurchase(){
-    $('#btnPurchase').prop('hidden', false);
+    $('#btnPurchase').prop('disabled', false);
    }
     function disablebtnPurchase(){
-    $('#btnPurchase').prop('hidden', true);
+    $('#btnPurchase').prop('disabled', true);
 }
 }

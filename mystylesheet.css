@@ -99,8 +99,8 @@ background: #333;
 }
 
 
-.button {
-    background-color: #70708F; 
+.button{
+   background-color: #70708F; 
     border:1px solid black;
     color: white;
     padding: 8px 19px;
@@ -109,18 +109,7 @@ background: #333;
     display: inline-block;
     font-size: 12px;
     border-radius: 5px;
-    
+    cursor: pointer;
 }
 
-button {
-    background-color: #70708F; 
-    border:1px solid black;
-    color: white;
-    padding: 8px 19px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    border-radius: 5px;
-    
-}
+

@@ -41,18 +41,18 @@ session_start();
   <li class="dropdowns">
     <a class="dropbtns">Curriculum Vitae</a>
     <div class="dropdown-contents">
-      <a href="cv_page1.html">Personal</a>
-      <a href="cv_page2.html">Education</a>
-      <a href="cv_page3.html">Work</a>
+      <a href="../CV/cv_page1.html">Personal</a>
+      <a href="../CV/cv_page2.html">Education</a>
+      <a href="../CV/cv_page3.html">Work</a>
     </div>
   </li>
   
     <li class="dropdowns">
     <a class="dropbtns">Interests</a>
     <div class="dropdown-contents">
-      <a href="interests/sports.html">Sports</a>
-      <a href="interests/travel.html">Travel</a>
-      <a href="interests/CloudServices.html">Cloud Services</a>
+      <a href="../interests/sports.html">Sports</a>
+      <a href="../interests/travel.html">Travel</a>
+      <a href="../interests/CloudServices.html">Cloud Services</a>
     </div>
   </li>
   <li><a href="Ebus1.php">Products</a></li>
@@ -60,7 +60,7 @@ session_start();
   <li><a href="https://is1113117740225.herokuapp.com/"><img src="https://png.icons8.com/color/1600/heroku.png" style="width: 20px;" alt="Logo"></a></li>
 </ul>
     
-        <!-- Addong a heading -->
+        <!-- Adding a heading -->
         <h4><strong>Select a Product</strong></h4>
         <br/>
         
@@ -133,14 +133,14 @@ session_start();
             <br/>
         
             <!-- Adding the button to proceed -->
-            <button type="submit" id="btnProceed" hidden>Add to Shopping Cart</button>
+            <button type="submit" id="btnProceed" class="button" disabled>Add to Shopping Cart</button>
             <br/>
             <br/>
             
         </form>
         
              <!--Calls the calcSub function -->
-            <button onClick="calcSub()">Calculate Cost</button>
+            <button class="button" onClick="calcSub()">Calculate Cost</button>
             <a role="button" href="Ebus1.php">Clear Choice</a>
             
            
